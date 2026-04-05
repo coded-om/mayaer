@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Lenis smooth scroll */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+@layer base {
+  :root {
+    --color-primary: #1f7a63;
+    --color-primary-50: #e6f4f1;
+    --color-primary-200: #a7d6c9;
+    --color-primary-700: #17614f;
+    --color-gold: #c9a227;
+    --color-success: #22c55e;
+    --color-danger: #ef4444;
+    --color-info: #2d6cdf;
+    --bg-page: #f5f7f6;
+    --bg-card: #ffffff;
+    --text-primary: #1f2937;
+    --text-muted: #6b7280;
+    --border-color: #d1d5db;
+  }
+
+  .dark {
+    --bg-page: #0f1117;
+    --bg-card: #1a1d27;
+    --text-primary: #f3f4f6;
+    --text-muted: #9ca3af;
+    --border-color: #374151;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Noto Sans Arabic", sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Hide scrollbar but allow scrolling */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    scrollbar-width: none;
+  }
+}
