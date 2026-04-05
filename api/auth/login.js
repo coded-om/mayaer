@@ -39,6 +39,6 @@ export default async function handler(req, res) {
     res.json({ token, name: user.name, email: user.email });
   } catch (err) {
     console.error("Login error:", err);
-    res.status(500).json({ error: "حدث خطأ في الخادم" });
+    res.status(500).json({ error: "حدث خطأ في الخادم", detail: err.message });
   }
 }
