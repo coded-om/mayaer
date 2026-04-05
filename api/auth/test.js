@@ -13,7 +13,7 @@ export default async function handler(req, res) {
         ok: false,
         error: "MONGODB_URI is not set",
         envKeys: Object.keys(process.env).filter(
-          (k) => k.includes("MONGO") || k.includes("JWT")
+          (k) => k.includes("MONGO") || k.includes("JWT"),
         ),
       });
     }
