@@ -1,8 +1,12 @@
 {
+  "framework": "vite",
+  "functions": {
+    "api/**/*.js": {
+      "memory": 256,
+      "maxDuration": 10
+    }
+  },
   "rewrites": [
-    { "source": "/api/auth/login", "destination": "/api/auth/login" },
-    { "source": "/api/auth/register", "destination": "/api/auth/register" },
-    { "source": "/api/auth/me", "destination": "/api/auth/me" },
     { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
 }
