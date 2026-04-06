@@ -8,16 +8,26 @@ import {
   RiUserFill,
 } from "react-icons/ri";
 import { BiTransfer } from "react-icons/bi";
-import { TbTarget, TbMoonStars } from "react-icons/tb";
+import {
+  TbTarget,
+  TbMoonStars,
+  TbBook,
+  TbAward,
+  TbCalendarDollar,
+  TbChartBar,
+  TbBuildingBank,
+  TbRobot,
+} from "react-icons/tb";
 import { cn } from "@/lib/utils";
 import type { IconType } from "react-icons";
-import logoNoBg from "@/assets/logo-with-out-bg.png";
+import logoNoBg from "@/assets/logo.jpeg";
 
 interface NavTab {
   path: string;
   icon: IconType;
   activeIcon: IconType;
   label: string;
+  section?: string;
 }
 
 const tabs: NavTab[] = [
@@ -41,6 +51,48 @@ const tabs: NavTab[] = [
     label: "nav.zakat",
   },
   {
+    path: "/education",
+    icon: TbBook,
+    activeIcon: TbBook,
+    label: "nav.education",
+    section: "new",
+  },
+  {
+    path: "/rewards",
+    icon: TbAward,
+    activeIcon: TbAward,
+    label: "nav.rewards",
+    section: "new",
+  },
+  {
+    path: "/financial-month",
+    icon: TbCalendarDollar,
+    activeIcon: TbCalendarDollar,
+    label: "nav.financialMonth",
+    section: "new",
+  },
+  {
+    path: "/markets",
+    icon: TbBuildingBank,
+    activeIcon: TbBuildingBank,
+    label: "nav.markets",
+    section: "new",
+  },
+  {
+    path: "/advisor",
+    icon: TbRobot,
+    activeIcon: TbRobot,
+    label: "nav.advisor",
+    section: "new",
+  },
+  {
+    path: "/report",
+    icon: TbChartBar,
+    activeIcon: TbChartBar,
+    label: "nav.report",
+    section: "more",
+  },
+  {
     path: "/profile",
     icon: RiUserLine,
     activeIcon: RiUserFill,
@@ -62,8 +114,12 @@ export function SideNav() {
                  border-l border-white/70 dark:border-white/[0.08]
                  shadow-xl shadow-black/5">
       {/* Logo */}
-      <div className="flex items-center gap-3 px-5 py-6 border-b border-white/50 dark:border-white/[0.06]">
-        <img src={logoNoBg} alt="معيار" className="w-10 h-10 object-contain" />
+      <div className="flex items-center gap-3 px-5 py-6 border-b border-white/50 dark:border-white/[0.06] ">
+        <img
+          src={logoNoBg}
+          alt="معيار"
+          className="w-10 h-10 object-contain rounded-lg"
+        />
       </div>
 
       {/* Nav links */}

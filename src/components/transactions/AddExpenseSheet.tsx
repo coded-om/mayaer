@@ -17,6 +17,7 @@ import { Input } from "@/components/ui/input";
 import { useBudgetStore } from "@/store/budgetStore";
 import { useStreakStore } from "@/store/streakStore";
 import { usePointsStore, POINT_VALUES } from "@/store/pointsStore";
+import { useAchievementsStore } from "@/store/achievementsStore";
 import { CATEGORIES } from "@/constants";
 import { getCategoryIcon } from "@/lib/categories";
 import { cn } from "@/lib/utils";
@@ -32,6 +33,7 @@ export function AddExpenseSheet() {
   const addTransaction = useBudgetStore((s) => s.addTransaction);
   const checkInToday = useStreakStore((s) => s.checkInToday);
   const addPoints = usePointsStore((s) => s.addPoints);
+  const checkAchievements = useAchievementsStore((s) => s.checkAchievements);
 
   const transactionSchema = useMemo(
     () =>
@@ -66,6 +68,7 @@ export function AddExpenseSheet() {
 
     checkInToday();
     addPoints(POINT_VALUES.ADD_TRANSACTION, "add_transaction");
+    checkAchievements();
 
     sileo.success({
       title:
@@ -82,8 +85,8 @@ export function AddExpenseSheet() {
       <motion.button
         whileTap={{ scale: 0.9 }}
         onClick={() => setOpen(true)}
-        className="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 w-14 h-14 rounded-full bg-primary text-white shadow-lg shadow-primary/30 flex items-center justify-center
-                   md:bottom-8 md:left-auto md:right-8 md:translate-x-0">
+        className="fixed bottom-20 end-5 z-50 w-14 h-14 rounded-full bg-primary text-white shadow-lg shadow-primary/30 flex items-center justify-center
+                   md:bottom-8 md:end-8">
         <TbPlus className="w-7 h-7" />
       </motion.button>
 

@@ -338,6 +338,7 @@ function ConnectingLines() {
   return (
     <svg
       className="absolute inset-0 w-full h-full pointer-events-none hidden lg:block"
+      viewBox="0 0 100 100"
       preserveAspectRatio="none">
       {/* Vertical line from top cards down */}
       <motion.line
@@ -366,7 +367,7 @@ function ConnectingLines() {
       />
       {/* Curved decorative line */}
       <motion.path
-        d="M 15% 50% Q 40% 35% 65% 50%"
+        d="M 15 50 Q 40 35 65 50"
         fill="none"
         stroke="rgba(77,255,204,0.06)"
         strokeWidth="1"

@@ -6,7 +6,7 @@ import { usePointsStore } from "@/store/pointsStore";
 import { TbTrophy, TbFlame, TbCheck } from "react-icons/tb";
 import { cn } from "@/lib/utils";
 
-export function ChallengesPage() {
+export function ChallengesPage({ embedded = false }: { embedded?: boolean }) {
   const { challenges, generateWeeklyChallenges, completeChallenge } =
     useChallengesStore();
   const addPoints = usePointsStore((s) => s.addPoints);
@@ -30,14 +30,16 @@ export function ChallengesPage() {
       animate={{ opacity: 1 }}
       className="space-y-5">
       {/* Header */}
-      <div>
-        <h1 className="font-arabic text-xl font-bold text-neutral-text dark:text-white">
-          {t("challenges.title")}
-        </h1>
-        <p className="font-arabic text-sm text-neutral-muted dark:text-gray-400">
-          {t("challenges.subtitle")}
-        </p>
-      </div>
+      {!embedded && (
+        <div>
+          <h1 className="font-arabic text-xl font-bold text-neutral-text dark:text-white">
+            {t("challenges.title")}
+          </h1>
+          <p className="font-arabic text-sm text-neutral-muted dark:text-gray-400">
+            {t("challenges.subtitle")}
+          </p>
+        </div>
+      )}
 
       {/* Points + Level card */}
       <motion.div

@@ -18,7 +18,7 @@ import { ar, enUS } from "date-fns/locale";
 
 const CHARITY_TYPES: CharityEntry["type"][] = ["sadaqah", "zakat", "other"];
 
-export function CharityPage() {
+export function CharityPage({ embedded = false }: { embedded?: boolean }) {
   const { t, i18n } = useTranslation();
   const isAr = i18n.language === "ar";
   const locale = isAr ? ar : enUS;
@@ -56,14 +56,16 @@ export function CharityPage() {
       animate={{ opacity: 1 }}
       className="space-y-5">
       {/* Header */}
-      <div>
-        <h1 className="font-arabic text-xl font-bold text-neutral-text dark:text-white">
-          {t("charity.title")}
-        </h1>
-        <p className="font-arabic text-sm text-neutral-muted dark:text-gray-400">
-          {t("charity.subtitle")}
-        </p>
-      </div>
+      {!embedded && (
+        <div>
+          <h1 className="font-arabic text-xl font-bold text-neutral-text dark:text-white">
+            {t("charity.title")}
+          </h1>
+          <p className="font-arabic text-sm text-neutral-muted dark:text-gray-400">
+            {t("charity.subtitle")}
+          </p>
+        </div>
+      )}
 
       {/* Summary cards */}
       <div className="grid grid-cols-2 gap-3">
