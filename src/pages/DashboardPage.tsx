@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
 import { BalanceCard } from "@/components/dashboard/BalanceCard";
 import { StreakCounter } from "@/components/dashboard/StreakCounter";
@@ -57,18 +56,6 @@ export function DashboardPage() {
   return (
     <>
       <NotificationPanel open={notifOpen} onClose={() => setNotifOpen(false)} />
-      {/* Wave background — dashboard only, mobile only — rendered in body to avoid overflow-x-hidden clipping fixed position */}
-      {createPortal(
-        <div
-          className="fixed top-0 left-0 right-0 h-56 pointer-events-none z-0 md:hidden"
-          style={{
-            backgroundImage: "url('/wave-bg.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "top center",
-          }}
-        />,
-        document.body
-      )}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
