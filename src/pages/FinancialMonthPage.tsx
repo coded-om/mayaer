@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { TbCalendarDollar } from "react-icons/tb";
 import { useTranslation } from "react-i18next";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { MonthSetup } from "@/components/financial-month/MonthSetup";

@@ -55,12 +55,12 @@ export function useAlerts() {
     const goalRule = rules.find((r) => r.type === "goal_deadline");
     if (goalRule?.enabled) {
       for (const g of goals) {
-        if (!g.deadline) continue;
-        const deadline = new Date(g.deadline);
+        if (!g.targetDate) continue;
+        const deadline = new Date(g.targetDate);
         const daysLeft = Math.ceil(
           (deadline.getTime() - now.getTime()) / (1000 * 60 * 60 * 24),
         );
-        if (daysLeft > 0 && daysLeft <= 7 && g.current < g.target) {
+        if (daysLeft > 0 && daysLeft <= 7 && g.savedAmount < g.targetAmount) {
           addAlert({
             type: "goal_deadline",
             titleKey: "alerts.goalDeadline.title",

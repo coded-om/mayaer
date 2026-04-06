@@ -20,7 +20,7 @@ export function EducationPage() {
 
   if (activeLesson) {
     return (
-      <LessonView lesson={activeLesson} onBack={() => setActiveLesson(null)} />
+      <LessonView lesson={activeLesson} onClose={() => setActiveLesson(null)} />
     );
   }
 

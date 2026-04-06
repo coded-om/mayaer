@@ -1,10 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import type {
-  AdvisorAnswers,
-  InvestmentPlan,
-  RiskTolerance,
-} from "@/types/markets";
+import type { AdvisorAnswers, InvestmentPlan } from "@/types/markets";
 import { generateInvestmentPlan } from "@/lib/advisor";
 
 interface AdvisorStore {

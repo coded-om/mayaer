@@ -17,8 +17,6 @@ import {
   TbAward,
   TbChartLine,
   TbCalendarDollar,
-  TbTrophy,
-  TbHeart,
   TbChartBar,
   TbX,
   TbBuildingBank,

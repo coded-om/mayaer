@@ -49,9 +49,7 @@ export function StockDetailSheet({
 
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent
-        side="bottom"
-        className="rounded-t-3xl border-t border-white/70 dark:border-white/[0.08] backdrop-blur-2xl bg-white/95 dark:bg-gray-900/95 max-h-[80vh] overflow-y-auto">
+      <SheetContent className="rounded-t-3xl border-t border-white/70 dark:border-white/[0.08] backdrop-blur-2xl bg-white/95 dark:bg-gray-900/95 max-h-[80vh] overflow-y-auto">
         <SheetHeader className="flex-row items-start justify-between">
           <div className="flex-1">
             <SheetTitle className="font-arabic text-lg font-bold text-neutral-text dark:text-white">

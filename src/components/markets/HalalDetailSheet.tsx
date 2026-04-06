@@ -27,9 +27,7 @@ export function HalalDetailSheet({
 
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent
-        side="bottom"
-        className="rounded-t-3xl border-t border-white/70 dark:border-white/[0.08] backdrop-blur-2xl bg-white/95 dark:bg-gray-900/95 max-h-[60vh]">
+      <SheetContent className="rounded-t-3xl border-t border-white/70 dark:border-white/[0.08] backdrop-blur-2xl bg-white/95 dark:bg-gray-900/95 max-h-[60vh]">
         <SheetHeader className="flex-row items-start justify-between">
           <SheetTitle className="font-arabic text-lg font-bold text-neutral-text dark:text-white">
             {t("markets.halal.details")}
