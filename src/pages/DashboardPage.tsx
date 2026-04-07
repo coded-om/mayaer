@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { BalanceCard } from "@/components/dashboard/BalanceCard";
 import { StreakCounter } from "@/components/dashboard/StreakCounter";
 import { SpendingChart } from "@/components/dashboard/SpendingChart";
+import { CategoryPieChart } from "@/components/dashboard/CategoryPieChart";
 import { TransactionList } from "@/components/transactions/TransactionList";
 import { AddExpenseSheet } from "@/components/transactions/AddExpenseSheet";
 import { useBudgetStore } from "@/store/budgetStore";
@@ -164,6 +165,9 @@ export function DashboardPage() {
 
         {/* ── Chart ── */}
         <SpendingChart />
+
+        {/* ── Category Breakdown ── */}
+        <CategoryPieChart />
 
         {/* ── Recent Activity ── */}
         <div>
