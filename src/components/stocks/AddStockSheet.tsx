@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { StockSearch } from "./StockSearch";
 import { useStocksStore } from "@/store/stocksStore";
 import { TbPlus } from "react-icons/tb";
@@ -59,9 +59,9 @@ export function AddStockSheet() {
         </motion.button>
       </SheetTrigger>
       <SheetContent>
-        <h2 className="font-arabic text-lg font-bold text-neutral-text dark:text-white mb-1">
+        <SheetTitle className="font-arabic text-lg font-bold text-neutral-text dark:text-white mb-1">
           {t("stocks.addStock")}
-        </h2>
+        </SheetTitle>
         <p className="font-arabic text-sm text-neutral-muted mb-4">
           {t("stocks.addStockDesc")}
         </p>
