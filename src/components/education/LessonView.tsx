@@ -124,7 +124,7 @@ export function LessonView({ lesson, onClose }: LessonViewProps) {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: isRtl ? 20 : -20 }}
           transition={{ duration: 0.2 }}
-          className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] p-5 min-h-[200px]">
+          className="glass-card p-5 min-h-[200px]">
           {currentStep.type === "text" && (
             <p className="font-arabic text-sm text-neutral-text dark:text-gray-200 leading-relaxed whitespace-pre-wrap">
               {t(currentStep.contentKey)}

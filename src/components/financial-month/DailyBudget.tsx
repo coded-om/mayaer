@@ -39,10 +39,10 @@ export function DailyBudget() {
       {/* Progress bar */}
       <div className="mb-2">
         <div className="flex items-center justify-between mb-1">
-          <span className="font-arabic text-[10px] text-neutral-muted">
+          <span className="font-arabic text-[11px] text-neutral-muted">
             {t("financialMonth.budgetHealth")}
           </span>
-          <span className="font-arabic text-[10px] text-neutral-muted">
+          <span className="font-arabic text-[11px] text-neutral-muted">
             {progress.toFixed(0)}%
           </span>
         </div>
@@ -62,7 +62,7 @@ export function DailyBudget() {
         </div>
       </div>
 
-      <p className="font-arabic text-[10px] text-center text-neutral-muted">
+      <p className="font-arabic text-[11px] text-center text-neutral-muted">
         {t("financialMonth.dailyBudgetHint", { days: daysUntilSalary })}
       </p>
     </motion.div>

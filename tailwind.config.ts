@@ -31,8 +31,11 @@ const config: Config = {
       },
       fontFamily: {
         display: ["Plus Jakarta Sans", "sans-serif"],
-        arabic: ["Noto Sans Arabic", "sans-serif"],
+        arabic: ["Noto Sans Arabic", "Plus Jakarta Sans", "sans-serif"],
         mono: ["JetBrains Mono", "monospace"],
+      },
+      spacing: {
+        4.5: "1.125rem",
       },
       borderRadius: {
         xl: "12px",

@@ -36,7 +36,7 @@ export function PointsSummary() {
               {level}
             </span>
           </div>
-          <p className="font-arabic text-[10px] text-neutral-muted">
+          <p className="font-arabic text-[11px] text-neutral-muted">
             {t("rewards.level")}
           </p>
         </div>
@@ -52,7 +52,7 @@ export function PointsSummary() {
             className="h-full rounded-full bg-gradient-to-r from-amber-500 to-primary"
           />
         </div>
-        <p className="font-arabic text-[10px] text-neutral-muted text-center">
+        <p className="font-arabic text-[11px] text-neutral-muted text-center">
           {t("rewards.pointsToNext", { points: pointsToNext })}
         </p>
       </div>

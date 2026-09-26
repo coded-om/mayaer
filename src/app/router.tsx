@@ -1,51 +1,132 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "./layout";
 import { ProtectedRoute } from "@/components/shared/ProtectedRoute";
-import { DashboardPage } from "@/pages/DashboardPage";
-import { TransactionsPage } from "@/pages/TransactionsPage";
-import { GoalsPage } from "@/pages/GoalsPage";
-import { ZakatPage } from "@/pages/ZakatPage";
-import { ProfilePage } from "@/pages/ProfilePage";
-import { LandingPage } from "@/pages/LandingPage";
-import { MonthlyReportPage } from "@/pages/MonthlyReportPage";
-import { ChallengesPage } from "@/pages/ChallengesPage";
-import { CharityPage } from "@/pages/CharityPage";
-import { CategoryBudgetPage } from "@/pages/CategoryBudgetPage";
-import { EducationPage } from "@/pages/EducationPage";
-import { RewardsPage } from "@/pages/RewardsPage";
-import { StocksPage } from "@/pages/StocksPage";
-import { FinancialMonthPage } from "@/pages/FinancialMonthPage";
-import { MarketsPage } from "@/pages/MarketsPage";
-import { AdvisorPage } from "@/pages/AdvisorPage";
-import { OnboardingPage } from "@/pages/OnboardingPage";
 
+// Each page is loaded on demand so the initial bundle stays small.
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <LandingPage />,
+    lazy: () =>
+      import("@/pages/LandingPage").then((m) => ({ Component: m.LandingPage })),
   },
   {
     element: <ProtectedRoute />,
     children: [
-      { path: "onboarding", element: <OnboardingPage /> },
+      {
+        path: "onboarding",
+        lazy: () =>
+          import("@/pages/OnboardingPage").then((m) => ({
+            Component: m.OnboardingPage,
+          })),
+      },
       {
         element: <Layout />,
         children: [
-          { path: "dashboard", element: <DashboardPage /> },
-          { path: "transactions", element: <TransactionsPage /> },
-          { path: "goals", element: <GoalsPage /> },
-          { path: "zakat", element: <ZakatPage /> },
-          { path: "profile", element: <ProfilePage /> },
-          { path: "report", element: <MonthlyReportPage /> },
-          { path: "challenges", element: <ChallengesPage /> },
-          { path: "charity", element: <CharityPage /> },
-          { path: "budgets", element: <CategoryBudgetPage /> },
-          { path: "education", element: <EducationPage /> },
-          { path: "rewards", element: <RewardsPage /> },
-          { path: "stocks", element: <StocksPage /> },
-          { path: "financial-month", element: <FinancialMonthPage /> },
-          { path: "markets", element: <MarketsPage /> },
-          { path: "advisor", element: <AdvisorPage /> },
+          {
+            path: "dashboard",
+            lazy: () =>
+              import("@/pages/DashboardPage").then((m) => ({
+                Component: m.DashboardPage,
+              })),
+          },
+          {
+            path: "transactions",
+            lazy: () =>
+              import("@/pages/TransactionsPage").then((m) => ({
+                Component: m.TransactionsPage,
+              })),
+          },
+          {
+            path: "goals",
+            lazy: () =>
+              import("@/pages/GoalsPage").then((m) => ({
+                Component: m.GoalsPage,
+              })),
+          },
+          {
+            path: "zakat",
+            lazy: () =>
+              import("@/pages/ZakatPage").then((m) => ({
+                Component: m.ZakatPage,
+              })),
+          },
+          {
+            path: "profile",
+            lazy: () =>
+              import("@/pages/ProfilePage").then((m) => ({
+                Component: m.ProfilePage,
+              })),
+          },
+          {
+            path: "report",
+            lazy: () =>
+              import("@/pages/MonthlyReportPage").then((m) => ({
+                Component: m.MonthlyReportPage,
+              })),
+          },
+          {
+            path: "challenges",
+            lazy: () =>
+              import("@/pages/ChallengesPage").then((m) => ({
+                Component: m.ChallengesPage,
+              })),
+          },
+          {
+            path: "charity",
+            lazy: () =>
+              import("@/pages/CharityPage").then((m) => ({
+                Component: m.CharityPage,
+              })),
+          },
+          {
+            path: "budgets",
+            lazy: () =>
+              import("@/pages/CategoryBudgetPage").then((m) => ({
+                Component: m.CategoryBudgetPage,
+              })),
+          },
+          {
+            path: "education",
+            lazy: () =>
+              import("@/pages/EducationPage").then((m) => ({
+                Component: m.EducationPage,
+              })),
+          },
+          {
+            path: "rewards",
+            lazy: () =>
+              import("@/pages/RewardsPage").then((m) => ({
+                Component: m.RewardsPage,
+              })),
+          },
+          {
+            path: "stocks",
+            lazy: () =>
+              import("@/pages/StocksPage").then((m) => ({
+                Component: m.StocksPage,
+              })),
+          },
+          {
+            path: "financial-month",
+            lazy: () =>
+              import("@/pages/FinancialMonthPage").then((m) => ({
+                Component: m.FinancialMonthPage,
+              })),
+          },
+          {
+            path: "markets",
+            lazy: () =>
+              import("@/pages/MarketsPage").then((m) => ({
+                Component: m.MarketsPage,
+              })),
+          },
+          {
+            path: "advisor",
+            lazy: () =>
+              import("@/pages/AdvisorPage").then((m) => ({
+                Component: m.AdvisorPage,
+              })),
+          },
         ],
       },
     ],

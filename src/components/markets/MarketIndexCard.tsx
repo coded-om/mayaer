@@ -15,8 +15,8 @@ export function MarketIndexCard({ index }: MarketIndexCardProps) {
   return (
     <motion.div
       whileTap={{ scale: 0.98 }}
-      className="flex-shrink-0 w-44 rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] p-3">
-      <p className="font-arabic text-[10px] text-neutral-muted dark:text-gray-400 mb-1">
+      className="flex-shrink-0 w-44 glass-card p-3">
+      <p className="font-arabic text-[11px] text-neutral-muted dark:text-gray-400 mb-1">
         {t(index.nameKey)}
       </p>
       <p className="font-arabic text-lg font-bold text-neutral-text dark:text-white">

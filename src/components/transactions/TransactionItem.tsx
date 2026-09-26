@@ -28,7 +28,7 @@ export function TransactionItem({ transaction }: TransactionItemProps) {
       initial={{ opacity: 0, x: -16 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 16 }}
-      className="flex items-center gap-3 p-3 rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)]">
+      className="flex items-center gap-3 p-3 glass-card">
       <div
         className="w-10 h-10 rounded-full flex items-center justify-center"
         style={{ backgroundColor: `${category?.color ?? "#9CA3AF"}15` }}>

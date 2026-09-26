@@ -1,13 +1,19 @@
 import jwt from "jsonwebtoken";
 
-const JWT_SECRET = process.env.JWT_SECRET || "change-this-secret";
+function getSecret() {
+  const secret = process.env.JWT_SECRET;
+  if (!secret) {
+    throw new Error("JWT_SECRET environment variable is not set");
+  }
+  return secret;
+}
 
 export function signToken(userId) {
-  return jwt.sign({ userId }, JWT_SECRET, { expiresIn: "30d" });
+  return jwt.sign({ userId }, getSecret(), { expiresIn: "30d" });
 }
 
 export function verifyToken(token) {
-  return jwt.verify(token, JWT_SECRET);
+  return jwt.verify(token, getSecret());
 }
 
 /** Set CORS headers on the response */

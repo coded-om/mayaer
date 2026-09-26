@@ -28,11 +28,11 @@ export function LessonCard({ lesson, progress, onStart }: LessonCardProps) {
     <motion.button
       whileTap={{ scale: 0.97 }}
       onClick={onStart}
-      className="w-full text-start rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-4 transition-all hover:bg-white/80 dark:hover:bg-white/[0.06]">
+      className="w-full text-start glass-card p-4 transition-all hover:bg-white/80 dark:hover:bg-white/[0.06]">
       <div className="flex items-start justify-between gap-3">
         <div className="flex-1 min-w-0">
           <span
-            className={`inline-block text-[10px] font-semibold font-arabic px-2 py-0.5 rounded-full mb-2 ${categoryColors[lesson.category] ?? "bg-gray-100 text-gray-600"}`}>
+            className={`inline-block text-[11px] font-semibold font-arabic px-2 py-0.5 rounded-full mb-2 ${categoryColors[lesson.category] ?? "bg-gray-100 text-gray-600"}`}>
             {t(`education.${lesson.category}`)}
           </span>
           <h3 className="font-arabic text-sm font-semibold text-neutral-text dark:text-white truncate">
@@ -64,10 +64,10 @@ export function LessonCard({ lesson, progress, onStart }: LessonCardProps) {
             className={`h-full rounded-full ${isCompleted ? "bg-emerald-500" : "bg-primary"}`}
           />
         </div>
-        <span className="font-arabic text-[10px] text-neutral-muted shrink-0">
+        <span className="font-arabic text-[11px] text-neutral-muted shrink-0">
           {stepsCompleted}/{totalSteps}
         </span>
-        <span className="font-arabic text-[10px] text-amber-500 font-semibold shrink-0">
+        <span className="font-arabic text-[11px] text-amber-500 font-semibold shrink-0">
           +{lesson.pointsReward}
         </span>
       </div>

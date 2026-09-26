@@ -15,7 +15,7 @@ export function PredictionCard() {
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.25 }}
-      className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-4">
+      className="glass-card p-4">
       <div className="flex items-center gap-2 mb-3">
         <TbBrain className="w-5 h-5 text-purple-500" />
         <span className="font-arabic text-sm font-semibold text-neutral-text dark:text-white">
@@ -40,7 +40,7 @@ export function PredictionCard() {
                 <span className="font-arabic text-xs text-neutral-text dark:text-gray-300">
                   {t(`categories.${p.category}`)}
                 </span>
-                <div className="flex items-center gap-3 text-[10px]">
+                <div className="flex items-center gap-3 text-[11px]">
                   <span className="text-purple-500 flex items-center gap-0.5">
                     <OmaniRial className="w-2 h-2" />
                     {p.predicted.toFixed(1)}
@@ -76,13 +76,13 @@ export function PredictionCard() {
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1">
             <span className="w-2 h-1 rounded-full bg-purple-400/60" />
-            <span className="font-arabic text-[10px] text-neutral-muted">
+            <span className="font-arabic text-[11px] text-neutral-muted">
               {t("financialMonth.predicted")}
             </span>
           </div>
           <div className="flex items-center gap-1">
             <span className="w-2 h-1 rounded-full bg-emerald-400" />
-            <span className="font-arabic text-[10px] text-neutral-muted">
+            <span className="font-arabic text-[11px] text-neutral-muted">
               {t("financialMonth.actual")}
             </span>
           </div>

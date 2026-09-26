@@ -150,7 +150,7 @@ export function SpendingChart() {
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.24 }}
-      className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-4">
+      className="glass-card p-4">
       <div className="flex items-center justify-between mb-3">
         <p className="font-arabic text-sm font-semibold text-neutral-text dark:text-white">
           {t("dashboard.weeklySpending")}
@@ -204,7 +204,7 @@ export function SpendingChart() {
                 if (!active || !payload?.length) return null;
                 return (
                   <div className="rounded-lg border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/90 dark:bg-neutral-900/90 px-3 py-2 shadow-md space-y-1">
-                    <p className="text-[10px] text-neutral-muted mb-1">
+                    <p className="text-[11px] text-neutral-muted mb-1">
                       {label}
                     </p>
                     {payload.map((entry) => (

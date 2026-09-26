@@ -93,7 +93,7 @@ export function BalanceCard() {
             {(isNegative || isLow) && (
               <div className="flex items-center gap-1">
                 <TbAlertTriangle className="w-3 h-3 text-white/80" />
-                <p className="font-arabic text-[10px] text-white/80">
+                <p className="font-arabic text-[11px] text-white/80">
                   {isNegative
                     ? t("dashboard.balanceNegative")
                     : t("dashboard.balanceLow")}
@@ -164,10 +164,10 @@ export function BalanceCard() {
                 className={`flex items-center gap-1 rounded-lg backdrop-blur-md ${item.bg} border border-white/20 px-2 py-1`}>
                 {item.icon}
                 <div>
-                  <p className="text-[8px] text-white/55 leading-none">
+                  <p className="text-[10px] text-white/55 leading-none">
                     {item.label}
                   </p>
-                  <p className="font-mono text-[10px] font-semibold leading-tight">
+                  <p className="font-mono text-[11px] font-semibold leading-tight">
                     {item.value}
                   </p>
                 </div>

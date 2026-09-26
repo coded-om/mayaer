@@ -73,7 +73,7 @@ export function AlertCard({ alert, onRead }: AlertCardProps) {
         <p className="font-arabic text-xs text-neutral-muted dark:text-gray-400 mt-0.5 line-clamp-2">
           {t(alert.descriptionKey, descParams)}
         </p>
-        <p className="font-arabic text-[10px] text-neutral-muted/60 mt-1">
+        <p className="font-arabic text-[11px] text-neutral-muted/60 mt-1">
           {new Date(alert.createdAt).toLocaleDateString()}
         </p>
       </div>

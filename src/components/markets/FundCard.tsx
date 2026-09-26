@@ -14,7 +14,7 @@ export function FundCard({ fund }: FundCardProps) {
   const isPositive = fund.navChange >= 0;
 
   return (
-    <div className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] p-4">
+    <div className="glass-card p-4">
       <div className="flex items-start justify-between mb-2">
         <div className="flex-1 min-w-0">
           <p className="font-arabic text-sm font-semibold text-neutral-text dark:text-white truncate">
@@ -29,7 +29,7 @@ export function FundCard({ fund }: FundCardProps) {
 
       <div className="flex items-end justify-between mt-3">
         <div>
-          <p className="font-arabic text-[10px] text-neutral-muted dark:text-gray-400">
+          <p className="font-arabic text-[11px] text-neutral-muted dark:text-gray-400">
             {t("markets.funds.nav")}
           </p>
           <p className="font-arabic text-lg font-bold text-neutral-text dark:text-white">
@@ -61,7 +61,7 @@ export function FundCard({ fund }: FundCardProps) {
 
       <div className="grid grid-cols-3 gap-2 mt-3 pt-2 border-t border-white/50 dark:border-white/[0.06]">
         <div>
-          <p className="font-arabic text-[10px] text-neutral-muted">
+          <p className="font-arabic text-[11px] text-neutral-muted">
             {t("markets.funds.ytd")}
           </p>
           <p
@@ -76,7 +76,7 @@ export function FundCard({ fund }: FundCardProps) {
           </p>
         </div>
         <div>
-          <p className="font-arabic text-[10px] text-neutral-muted">
+          <p className="font-arabic text-[11px] text-neutral-muted">
             {t("markets.funds.expense")}
           </p>
           <p className="font-arabic text-xs font-bold text-neutral-text dark:text-white">
@@ -84,7 +84,7 @@ export function FundCard({ fund }: FundCardProps) {
           </p>
         </div>
         <div>
-          <p className="font-arabic text-[10px] text-neutral-muted">
+          <p className="font-arabic text-[11px] text-neutral-muted">
             {t("markets.funds.category")}
           </p>
           <p className="font-arabic text-xs font-bold text-neutral-text dark:text-white truncate">

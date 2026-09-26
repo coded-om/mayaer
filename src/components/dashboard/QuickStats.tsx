@@ -45,13 +45,13 @@ export function QuickStats() {
         return (
           <div
             key={stat.key}
-            className="flex flex-col items-center gap-2 rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-3">
+            className="flex flex-col items-center gap-2 glass-card p-3">
             <div
               className={`w-8 h-8 rounded-full ${stat.bgColor} flex items-center justify-center`}>
               <Icon className={`w-4 h-4 ${stat.color}`} />
             </div>
             <div className="text-center">
-              <p className="font-arabic text-[10px] text-neutral-muted">
+              <p className="font-arabic text-[11px] text-neutral-muted">
                 {t(stat.labelKey)}
               </p>
               <p className="font-mono text-sm font-bold text-neutral-text dark:text-white">

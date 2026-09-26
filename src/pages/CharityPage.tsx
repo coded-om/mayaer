@@ -74,7 +74,7 @@ export function CharityPage({ embedded = false }: { embedded?: boolean }) {
           animate={{ opacity: 1, y: 0 }}
           className="rounded-2xl bg-green-50/70 dark:bg-green-950/20 border border-green-200/60 dark:border-green-800/40 backdrop-blur-xl shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-4">
           <TbHeart className="w-5 h-5 text-success mb-2" />
-          <p className="font-arabic text-[10px] text-neutral-muted">
+          <p className="font-arabic text-[11px] text-neutral-muted">
             {t("charity.thisMonth")}
           </p>
           <p className="font-mono text-lg font-bold text-success">
@@ -87,7 +87,7 @@ export function CharityPage({ embedded = false }: { embedded?: boolean }) {
           transition={{ delay: 0.05 }}
           className="rounded-2xl bg-purple-50/70 dark:bg-purple-950/20 border border-purple-200/60 dark:border-purple-800/40 backdrop-blur-xl shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-4">
           <TbCoin className="w-5 h-5 text-purple-500 mb-2" />
-          <p className="font-arabic text-[10px] text-neutral-muted">
+          <p className="font-arabic text-[11px] text-neutral-muted">
             {t("charity.total")}
           </p>
           <p className="font-mono text-lg font-bold text-purple-600 dark:text-purple-400">
@@ -109,7 +109,7 @@ export function CharityPage({ embedded = false }: { embedded?: boolean }) {
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-4 space-y-3">
+          className="glass-card p-4 space-y-3">
           {/* Type selector */}
           <div className="flex gap-2">
             {CHARITY_TYPES.map((ct) => (
@@ -174,7 +174,7 @@ export function CharityPage({ embedded = false }: { embedded?: boolean }) {
             initial={{ opacity: 0, x: -8 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: i * 0.04 }}
-            className="flex items-center gap-3 rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-3">
+            className="flex items-center gap-3 glass-card p-3">
             <div
               className={cn(
                 "w-10 h-10 rounded-full flex items-center justify-center shrink-0",
@@ -201,7 +201,7 @@ export function CharityPage({ embedded = false }: { embedded?: boolean }) {
                   {entry.note}
                 </p>
               )}
-              <p className="font-mono text-[10px] text-neutral-muted">
+              <p className="font-mono text-[11px] text-neutral-muted">
                 {format(new Date(entry.date), "d MMM yyyy", { locale })}
               </p>
             </div>

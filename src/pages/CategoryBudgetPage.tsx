@@ -143,7 +143,7 @@ export function CategoryBudgetPage() {
 
       {/* Add budget section */}
       {unbudgetedCategories.length > 0 && (
-        <div className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-4 space-y-3">
+        <div className="glass-card p-4 space-y-3">
           <p className="font-arabic text-sm font-semibold text-neutral-text dark:text-white">
             {t("categoryBudget.setLimit")}
           </p>

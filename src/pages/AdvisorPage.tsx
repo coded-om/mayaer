@@ -36,7 +36,7 @@ export function AdvisorPage() {
         </motion.div>
 
         {/* Content */}
-        <div className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] p-5">
+        <div className="glass-card p-5">
           {plan ? (
             <InvestmentPlanView plan={plan} onReset={resetPlan} />
           ) : (

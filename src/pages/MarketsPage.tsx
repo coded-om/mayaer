@@ -140,7 +140,7 @@ export function MarketsPage() {
                   <span className="relative z-10 flex items-center justify-center gap-1">
                     {t(t_.labelKey)}
                     {t_.count != null && t_.count > 0 && (
-                      <span className="w-4 h-4 rounded-full bg-red-500 text-white text-[9px] flex items-center justify-center">
+                      <span className="w-4 h-4 rounded-full bg-red-500 text-white text-[10px] flex items-center justify-center">
                         {t_.count}
                       </span>
                     )}
@@ -168,7 +168,7 @@ export function MarketsPage() {
                 <HalalFilter value={halalFilter} onChange={setHalalFilter} />
 
                 {/* Stock List */}
-                <div className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] divide-y divide-white/50 dark:divide-white/[0.06]">
+                <div className="glass-card divide-y divide-white/50 dark:divide-white/[0.06]">
                   {stocks.length > 0 ? (
                     stocks.map((stock) => (
                       <StockListItem
@@ -224,7 +224,7 @@ export function MarketsPage() {
             {tab === "alerts" && (
               <div className="space-y-4">
                 <AlertSettings />
-                <div className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] p-2 space-y-1">
+                <div className="glass-card p-2 space-y-1">
                   {alerts.length > 0 ? (
                     alerts.map((a) => (
                       <AlertCard

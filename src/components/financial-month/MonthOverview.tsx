@@ -31,7 +31,7 @@ export function MonthOverview({ onEdit }: MonthOverviewProps) {
           <p className="font-arabic text-3xl font-bold text-primary">
             {daysUntilSalary}
           </p>
-          <p className="font-arabic text-[10px] text-neutral-muted text-center">
+          <p className="font-arabic text-[11px] text-neutral-muted text-center">
             {t("financialMonth.daysUntilSalary")}
           </p>
         </motion.div>
@@ -47,7 +47,7 @@ export function MonthOverview({ onEdit }: MonthOverviewProps) {
             <OmaniRial className="w-4 h-4" />
             {dailyBudget.toFixed(3)}
           </p>
-          <p className="font-arabic text-[10px] text-neutral-muted text-center">
+          <p className="font-arabic text-[11px] text-neutral-muted text-center">
             {t("financialMonth.dailyBudget")}
           </p>
         </motion.div>
@@ -59,7 +59,7 @@ export function MonthOverview({ onEdit }: MonthOverviewProps) {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] p-4">
+          className="glass-card p-4">
           <p className="font-arabic text-xs text-neutral-muted mb-1">
             {t("financialMonth.remainingBudget")}
           </p>
@@ -78,7 +78,7 @@ export function MonthOverview({ onEdit }: MonthOverviewProps) {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15 }}
-          className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] p-4">
+          className="glass-card p-4">
           <p className="font-arabic text-xs text-neutral-muted mb-1">
             {t("financialMonth.totalFixed")}
           </p>
@@ -95,7 +95,7 @@ export function MonthOverview({ onEdit }: MonthOverviewProps) {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] p-4">
+          className="glass-card p-4">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2">
               <TbReceipt className="w-4 h-4 text-neutral-muted" />

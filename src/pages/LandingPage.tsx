@@ -171,7 +171,7 @@ function TransactionCard({
           <span className="text-white/80 text-xs font-arabic font-semibold leading-none">
             {label}
           </span>
-          <span className="text-white/30 text-[10px] font-mono leading-none mt-0.5">
+          <span className="text-white/30 text-[11px] font-mono leading-none mt-0.5">
             {subLabel}
           </span>
         </div>
@@ -179,7 +179,7 @@ function TransactionCard({
           <span className="text-white font-bold text-sm font-mono leading-none">
             {value}
           </span>
-          <span className="text-white/30 text-[10px] font-mono leading-none mt-0.5">
+          <span className="text-white/30 text-[11px] font-mono leading-none mt-0.5">
             {unit}
           </span>
         </div>
@@ -244,7 +244,7 @@ function StepDial() {
         return (
           <div
             key={item.labelKey}
-            className="absolute text-[9px] font-arabic text-white/30 font-medium"
+            className="absolute text-[10px] font-arabic text-white/30 font-medium"
             style={{
               left: `${cx}%`,
               top: `${cy}%`,
@@ -1006,7 +1006,7 @@ export function LandingPage() {
                   ].map((tag) => (
                     <span
                       key={tag}
-                      className="rounded-full bg-white/[0.04] border border-white/[0.08] px-3 py-1 text-[10px] font-arabic text-white/30">
+                      className="rounded-full bg-white/[0.04] border border-white/[0.08] px-3 py-1 text-[11px] font-arabic text-white/30">
                       {tag}
                     </span>
                   ))}
@@ -1065,7 +1065,7 @@ export function LandingPage() {
                         className={`w-full rounded-md ${bar.color}`}
                         style={{ minHeight: 4 }}
                       />
-                      <span className="text-[9px] font-arabic text-white/25">
+                      <span className="text-[10px] font-arabic text-white/25">
                         {bar.label}
                       </span>
                     </div>

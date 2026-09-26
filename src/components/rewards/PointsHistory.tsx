@@ -31,7 +31,7 @@ export function PointsHistory() {
                 defaultValue: entry.reason,
               })}
             </p>
-            <p className="font-arabic text-[10px] text-neutral-muted">
+            <p className="font-arabic text-[11px] text-neutral-muted">
               {format(parseISO(entry.date), "d MMM, HH:mm", {
                 locale: i18n.language === "ar" ? ar : enUS,
               })}

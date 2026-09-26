@@ -49,7 +49,7 @@ export function CategoryPieChart() {
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.28 }}
-      className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-4">
+      className="glass-card p-4">
       <p className="font-arabic text-sm font-semibold text-neutral-text dark:text-white mb-3">
         {t("dashboard.spendingByCategory")}
       </p>

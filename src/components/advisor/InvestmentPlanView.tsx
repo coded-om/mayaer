@@ -33,7 +33,7 @@ export function InvestmentPlanView({ plan, onReset }: InvestmentPlanViewProps) {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] p-4">
+          className="glass-card p-4">
           <TbCoin className="w-6 h-6 text-primary mb-2" />
           <p className="font-arabic text-xs text-neutral-muted">
             {t("advisor.plan.monthlyTarget")}
@@ -48,7 +48,7 @@ export function InvestmentPlanView({ plan, onReset }: InvestmentPlanViewProps) {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] p-4">
+          className="glass-card p-4">
           <TbClock className="w-6 h-6 text-primary mb-2" />
           <p className="font-arabic text-xs text-neutral-muted">
             {t("advisor.plan.timeline")}
@@ -67,7 +67,7 @@ export function InvestmentPlanView({ plan, onReset }: InvestmentPlanViewProps) {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
-        className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] p-4">
+        className="glass-card p-4">
         <p className="font-arabic text-sm font-semibold text-neutral-text dark:text-white mb-3">
           {t("advisor.plan.allocation")}
         </p>
@@ -90,7 +90,7 @@ export function InvestmentPlanView({ plan, onReset }: InvestmentPlanViewProps) {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] p-4">
+          className="glass-card p-4">
           <p className="font-arabic text-sm font-semibold text-neutral-text dark:text-white mb-3">
             {t("advisor.plan.tips")}
           </p>

@@ -88,7 +88,7 @@ function NotifRow({ notif, lang }: { notif: AppNotification; lang: string }) {
         <p className="font-arabic text-xs text-neutral-muted dark:text-white/50 mt-0.5 leading-snug">
           {body}
         </p>
-        <p className="font-arabic text-[10px] text-neutral-muted/60 dark:text-white/30 mt-1">
+        <p className="font-arabic text-[11px] text-neutral-muted/60 dark:text-white/30 mt-1">
           {timeAgo(notif.createdAt, lang)}
         </p>
       </div>

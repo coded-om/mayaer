@@ -241,7 +241,7 @@ export function ProfilePage() {
           onChange={(e) => setSavingsGoalPercent(parseInt(e.target.value))}
           className="w-full h-2 rounded-full appearance-none cursor-pointer accent-primary bg-neutral-bg dark:bg-gray-700"
         />
-        <div className="flex justify-between font-arabic text-[10px] text-neutral-muted">
+        <div className="flex justify-between font-arabic text-[11px] text-neutral-muted">
           <span>5%</span>
           <span className="text-emerald-500 font-semibold">
             {t("profile.savingsGoalPercent", { percent: savingsGoalPercent })}
@@ -455,7 +455,7 @@ export function ProfilePage() {
                   <OmaniRial className="w-3 h-auto" />
                 )}
               </p>
-              <p className="font-arabic text-[10px] text-neutral-muted">
+              <p className="font-arabic text-[11px] text-neutral-muted">
                 {stat.label}
               </p>
             </Card>

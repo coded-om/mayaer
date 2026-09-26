@@ -27,10 +27,10 @@ export function BadgeGrid() {
                 : "border-white/50 dark:border-white/[0.08] bg-white/30 dark:bg-white/[0.02] opacity-50"
             }`}>
             <span className="text-2xl">{badge.icon}</span>
-            <span className="font-arabic text-[10px] font-semibold text-neutral-text dark:text-white text-center leading-tight">
+            <span className="font-arabic text-[11px] font-semibold text-neutral-text dark:text-white text-center leading-tight">
               {t(badge.nameKey)}
             </span>
-            <span className="font-arabic text-[9px] text-neutral-muted">
+            <span className="font-arabic text-[10px] text-neutral-muted">
               {badge.requiredPoints} {t("challenges.points")}
             </span>
           </motion.div>

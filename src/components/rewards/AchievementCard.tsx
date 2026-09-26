@@ -44,7 +44,7 @@ export function AchievementCard({ achievement }: AchievementCardProps) {
             {t(achievement.descriptionKey)}
           </p>
           {isUnlocked && unlockDate && (
-            <p className="font-arabic text-[10px] text-amber-500 mt-0.5">
+            <p className="font-arabic text-[11px] text-amber-500 mt-0.5">
               {format(parseISO(unlockDate), "d MMM yyyy", {
                 locale: i18n.language === "ar" ? ar : enUS,
               })}

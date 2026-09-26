@@ -64,7 +64,7 @@ export function ChallengesPage({ embedded = false }: { embedded?: boolean }) {
             <p className="font-mono text-2xl font-bold text-gold">
               {completedCount}
             </p>
-            <p className="font-arabic text-[10px] text-neutral-muted">
+            <p className="font-arabic text-[11px] text-neutral-muted">
               {t("challenges.completed")}
             </p>
           </div>
@@ -72,10 +72,10 @@ export function ChallengesPage({ embedded = false }: { embedded?: boolean }) {
         {/* Progress to next level */}
         <div className="mt-3">
           <div className="flex items-center justify-between mb-1">
-            <span className="font-arabic text-[10px] text-neutral-muted">
+            <span className="font-arabic text-[11px] text-neutral-muted">
               {t("challenges.nextLevel")}
             </span>
-            <span className="font-mono text-[10px] text-neutral-muted">
+            <span className="font-mono text-[11px] text-neutral-muted">
               {totalPoints % 100}/100
             </span>
           </div>
@@ -138,10 +138,10 @@ export function ChallengesPage({ embedded = false }: { embedded?: boolean }) {
               {/* Progress bar */}
               <div className="mt-3">
                 <div className="flex items-center justify-between mb-1">
-                  <span className="font-arabic text-[10px] text-neutral-muted">
+                  <span className="font-arabic text-[11px] text-neutral-muted">
                     {t("challenges.progress")}
                   </span>
-                  <span className="font-mono text-[10px] text-neutral-muted">
+                  <span className="font-mono text-[11px] text-neutral-muted">
                     {challenge.progress}/{challenge.target}
                   </span>
                 </div>

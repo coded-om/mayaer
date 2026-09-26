@@ -11,7 +11,7 @@ export function SukukCard({ sukuk }: SukukCardProps) {
   const isAr = i18n.language === "ar";
 
   return (
-    <div className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] p-4">
+    <div className="glass-card p-4">
       <div className="flex items-start justify-between mb-2">
         <div>
           <p className="font-arabic text-sm font-semibold text-neutral-text dark:text-white">
@@ -26,7 +26,7 @@ export function SukukCard({ sukuk }: SukukCardProps) {
 
       <div className="grid grid-cols-3 gap-2 mt-3">
         <div>
-          <p className="font-arabic text-[10px] text-neutral-muted dark:text-gray-400">
+          <p className="font-arabic text-[11px] text-neutral-muted dark:text-gray-400">
             {t("markets.sukuk.yield")}
           </p>
           <p className="font-arabic text-sm font-bold text-emerald-600 dark:text-emerald-400">
@@ -34,7 +34,7 @@ export function SukukCard({ sukuk }: SukukCardProps) {
           </p>
         </div>
         <div>
-          <p className="font-arabic text-[10px] text-neutral-muted dark:text-gray-400">
+          <p className="font-arabic text-[11px] text-neutral-muted dark:text-gray-400">
             {t("markets.sukuk.rating")}
           </p>
           <p className="font-arabic text-sm font-bold text-neutral-text dark:text-white">
@@ -42,7 +42,7 @@ export function SukukCard({ sukuk }: SukukCardProps) {
           </p>
         </div>
         <div>
-          <p className="font-arabic text-[10px] text-neutral-muted dark:text-gray-400">
+          <p className="font-arabic text-[11px] text-neutral-muted dark:text-gray-400">
             {t("markets.sukuk.maturity")}
           </p>
           <p className="font-arabic text-sm font-bold text-neutral-text dark:text-white">

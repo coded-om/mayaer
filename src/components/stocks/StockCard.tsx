@@ -24,7 +24,7 @@ export function StockCard({
     <motion.div
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
-      className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-4">
+      className="glass-card p-4">
       <div className="flex items-start justify-between mb-3">
         <div>
           <h3 className="font-arabic text-base font-bold text-neutral-text dark:text-white">
@@ -58,7 +58,7 @@ export function StockCard({
 
       <div className="grid grid-cols-3 gap-3">
         <div>
-          <p className="font-arabic text-[10px] text-neutral-muted">
+          <p className="font-arabic text-[11px] text-neutral-muted">
             {t("stocks.purchasePrice")}
           </p>
           <p className="font-arabic text-sm font-semibold text-neutral-text dark:text-white">
@@ -66,7 +66,7 @@ export function StockCard({
           </p>
         </div>
         <div>
-          <p className="font-arabic text-[10px] text-neutral-muted">
+          <p className="font-arabic text-[11px] text-neutral-muted">
             {t("stocks.currentPrice")}
           </p>
           <p className="font-arabic text-sm font-semibold text-neutral-text dark:text-white">
@@ -74,7 +74,7 @@ export function StockCard({
           </p>
         </div>
         <div>
-          <p className="font-arabic text-[10px] text-neutral-muted">
+          <p className="font-arabic text-[11px] text-neutral-muted">
             {t("stocks.profitLoss")}
           </p>
           <p
@@ -89,11 +89,11 @@ export function StockCard({
       </div>
 
       <div className="mt-2 pt-2 border-t border-white/30 dark:border-white/[0.06] flex items-center justify-between">
-        <span className="font-arabic text-[10px] text-neutral-muted">
+        <span className="font-arabic text-[11px] text-neutral-muted">
           {holding.quantity} × ${holding.purchasePrice.toFixed(2)}
         </span>
         {quote && (
-          <span className="font-arabic text-[10px] text-neutral-muted">
+          <span className="font-arabic text-[11px] text-neutral-muted">
             {t("stocks.lastUpdated")}:{" "}
             {new Date(quote.lastUpdated).toLocaleTimeString([], {
               hour: "2-digit",

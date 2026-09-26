@@ -56,7 +56,7 @@ export function MonthSetup({ onSave }: MonthSetupProps) {
 
   return (
     <div className="space-y-5">
-      <div className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] p-4 space-y-4">
+      <div className="glass-card p-4 space-y-4">
         {/* Salary Day */}
         <div>
           <label className="font-arabic text-sm font-medium text-neutral-text dark:text-white block mb-1.5">
@@ -115,7 +115,7 @@ export function MonthSetup({ onSave }: MonthSetupProps) {
       </div>
 
       {/* Fixed Expenses */}
-      <div className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] p-4 space-y-3">
+      <div className="glass-card p-4 space-y-3">
         <h3 className="font-arabic text-sm font-semibold text-neutral-text dark:text-white">
           {t("financialMonth.fixedExpenses")}
         </h3>

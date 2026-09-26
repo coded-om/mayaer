@@ -54,7 +54,7 @@ export function StockListItem({
       <div className="flex-shrink-0 text-end">
         <p className="font-arabic text-sm font-bold text-neutral-text dark:text-white">
           {stock.price.toFixed(stock.currency === "OMR" ? 3 : 2)}{" "}
-          <span className="text-[10px] text-neutral-muted">
+          <span className="text-[11px] text-neutral-muted">
             {stock.currency}
           </span>
         </p>

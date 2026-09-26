@@ -23,7 +23,7 @@ export function HalalBadge({ status, size = "sm" }: HalalBadgeProps) {
       className={cn(
         "inline-flex items-center rounded-full font-arabic font-medium",
         STYLES[status],
-        size === "sm" ? "px-2 py-0.5 text-[10px]" : "px-3 py-1 text-xs",
+        size === "sm" ? "px-2 py-0.5 text-[11px]" : "px-3 py-1 text-xs",
       )}>
       {t(`markets.halal.${status}`)}
     </span>

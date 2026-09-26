@@ -91,7 +91,7 @@ export function PortfolioSummary() {
                 {isProfit ? "+" : ""}${totalPL.toFixed(2)}
               </span>
             </div>
-            <span className="font-arabic text-[10px] text-neutral-muted">
+            <span className="font-arabic text-[11px] text-neutral-muted">
               {t("stocks.totalProfitLoss")}
             </span>
           </div>
@@ -107,7 +107,7 @@ export function PortfolioSummary() {
                 className="w-2 h-2 rounded-full shrink-0"
                 style={{ backgroundColor: item.color }}
               />
-              <span className="font-arabic text-[10px] text-neutral-muted">
+              <span className="font-arabic text-[11px] text-neutral-muted">
                 {item.name}
               </span>
             </div>

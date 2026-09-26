@@ -174,7 +174,7 @@ export function BottomNav() {
                       </div>
                       <span
                         className={cn(
-                          "font-arabic text-[10px] text-center leading-tight",
+                          "font-arabic text-[11px] text-center leading-tight",
                           isActive
                             ? "text-primary font-semibold"
                             : "text-neutral-muted dark:text-gray-400",
@@ -223,7 +223,7 @@ export function BottomNav() {
                 </motion.div>
                 <span
                   className={cn(
-                    "text-[10px] font-arabic transition-colors",
+                    "text-[11px] font-arabic transition-colors",
                     isActive
                       ? "text-primary font-semibold"
                       : "text-neutral-muted dark:text-gray-500",
@@ -262,7 +262,7 @@ export function BottomNav() {
             </motion.div>
             <span
               className={cn(
-                "text-[10px] font-arabic transition-colors",
+                "text-[11px] font-arabic transition-colors",
                 isMoreActive
                   ? "text-primary font-semibold"
                   : "text-neutral-muted dark:text-gray-500",

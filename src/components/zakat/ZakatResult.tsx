@@ -56,7 +56,7 @@ export function ZakatResult({ result }: ZakatResultProps) {
           </Button>
         </div>
       ) : (
-        <div className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-5">
+        <div className="glass-card p-5">
           <div className="flex items-center gap-2 mb-3">
             <div className="w-8 h-8 rounded-full bg-blue-50 dark:bg-blue-950 flex items-center justify-center">
               <TbInfoCircle className="w-5 h-5 text-info" />

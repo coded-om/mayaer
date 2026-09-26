@@ -236,7 +236,7 @@ export function OnboardingPage() {
                   onChange={(e) => setSavingsPercentVal(Number(e.target.value))}
                   className="w-full cursor-pointer accent-primary"
                 />
-                <div className="flex justify-between text-[10px] text-neutral-muted dark:text-white/30 font-mono">
+                <div className="flex justify-between text-[11px] text-neutral-muted dark:text-white/30 font-mono">
                   <span>5%</span>
                   <span>25%</span>
                   <span>50%</span>

@@ -62,7 +62,7 @@ export function DashboardPage() {
         animate={{ opacity: 1 }}
         className="relative z-10 space-y-5 pb-6">
         {/* ── Top Header Bar ── */}
-        <div className="flex items-center justify-between  bg-white p-2 rounded-xl">
+        <div className="glass-card flex items-center justify-between px-3 py-2.5">
           {/* Avatar + Greeting */}
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-primary-700 flex items-center justify-center shadow-[0_4px_12px_rgba(31,122,99,0.3)]">
@@ -91,7 +91,7 @@ export function DashboardPage() {
               className="relative w-9 h-9 rounded-full backdrop-blur-xl bg-white/60 dark:bg-white/[0.06] border border-white/70 dark:border-white/[0.10] flex items-center justify-center shadow-sm">
               <TbBell className="w-4.5 h-4.5 text-neutral-text dark:text-white/70" />
               {unreadCount > 0 && (
-                <span className="absolute -top-0.5 -right-0.5 min-w-[16px] h-4 rounded-full bg-primary text-white text-[9px] font-bold flex items-center justify-center px-0.5">
+                <span className="absolute -top-0.5 -right-0.5 min-w-[16px] h-4 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center px-0.5">
                   {unreadCount > 9 ? "9+" : unreadCount}
                 </span>
               )}
@@ -118,14 +118,14 @@ export function DashboardPage() {
           <motion.button
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate("/goals")}
-            className="rounded-2xl p-3 flex flex-col items-center justify-center gap-1 backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] border border-white/70 dark:border-white/[0.08] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)]">
+            className="glass-card p-3 flex flex-col items-center justify-center gap-1">
             <div className="w-9 h-9 rounded-xl bg-emerald-500/15 dark:bg-emerald-400/10 flex items-center justify-center">
               <TbTargetArrow className="w-5 h-5 text-emerald-500 dark:text-emerald-400" />
             </div>
             <span className="font-arabic text-xl font-bold text-emerald-500 dark:text-emerald-400 leading-none">
               {achievedGoals}
             </span>
-            <span className="font-arabic text-[10px] text-neutral-muted dark:text-white/40 font-medium leading-tight text-center">
+            <span className="font-arabic text-[11px] text-neutral-muted dark:text-white/40 font-medium leading-tight text-center">
               {t("profile.goalsAchieved")}
             </span>
           </motion.button>
@@ -134,7 +134,7 @@ export function DashboardPage() {
           <motion.button
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate("/markets")}
-            className="rounded-2xl p-3 flex flex-col items-center justify-center gap-1 backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] border border-white/70 dark:border-white/[0.08] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] overflow-hidden w-full">
+            className="glass-card p-3 flex flex-col items-center justify-center gap-1 overflow-hidden w-full">
             <div className="w-9 h-9 rounded-xl bg-amber-500/15 dark:bg-amber-400/10 flex items-center justify-center shrink-0">
               <TbStarFilled className="w-4.5 h-4.5 text-amber-500 dark:text-amber-400" />
             </div>
@@ -144,11 +144,11 @@ export function DashboardPage() {
                   <div
                     key={s.symbol}
                     className="flex items-center justify-between w-full">
-                    <span className="font-arabic text-[9px] text-neutral-text dark:text-white font-semibold truncate">
+                    <span className="font-arabic text-[10px] text-neutral-text dark:text-white font-semibold truncate">
                       {s.symbol}
                     </span>
                     <span
-                      className={`font-arabic text-[9px] font-bold ${s.changePercent >= 0 ? "text-emerald-500" : "text-red-400"}`}>
+                      className={`font-arabic text-[10px] font-bold ${s.changePercent >= 0 ? "text-emerald-500" : "text-red-400"}`}>
                       {s.changePercent >= 0 ? "+" : ""}
                       {s.changePercent}%
                     </span>
@@ -156,7 +156,7 @@ export function DashboardPage() {
                 ))}
               </div>
             ) : (
-              <span className="font-arabic text-[10px] text-neutral-muted dark:text-white/40 font-medium leading-tight text-center">
+              <span className="font-arabic text-[11px] text-neutral-muted dark:text-white/40 font-medium leading-tight text-center">
                 {t("nav.markets")}
               </span>
             )}
@@ -181,7 +181,7 @@ export function DashboardPage() {
               {t("dashboard.viewAll")}
             </button>
           </div>
-          <div className="rounded-2xl backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] border border-white/70 dark:border-white/[0.08] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.15)] overflow-hidden">
+          <div className="glass-card overflow-hidden">
             <TransactionList transactions={recentTransactions} />
           </div>
         </div>

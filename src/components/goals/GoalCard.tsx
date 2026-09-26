@@ -78,7 +78,7 @@ export function GoalCard({ goal }: GoalCardProps) {
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -12 }}
-      className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] p-4 shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)]">
+      className="glass-card p-4">
       {/* Header row */}
       <div className="flex items-start justify-between gap-3 mb-3">
         <div className="flex items-center gap-2.5 flex-1 min-w-0">
@@ -115,7 +115,7 @@ export function GoalCard({ goal }: GoalCardProps) {
 
         <div className="flex items-center gap-1 flex-shrink-0">
           {isComplete && (
-            <span className="flex items-center gap-1 rounded-full bg-success/10 px-2 py-0.5 text-[10px] font-arabic font-semibold text-success">
+            <span className="flex items-center gap-1 rounded-full bg-success/10 px-2 py-0.5 text-[11px] font-arabic font-semibold text-success">
               <TbCheck className="w-3 h-3" /> {t("goals.complete")}
             </span>
           )}
@@ -242,7 +242,7 @@ export function GoalsSummary() {
         return (
           <div
             key={s.label}
-            className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] p-3 text-center shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)]">
+            className="glass-card p-3 text-center">
             <Icon className={cn("w-5 h-5 mx-auto mb-1", s.color)} />
             <p className="font-mono text-sm font-bold text-neutral-text dark:text-white">
               {s.value}{" "}
@@ -250,14 +250,14 @@ export function GoalsSummary() {
                 <OmaniRial className="w-3 h-auto" />
               )}
             </p>
-            <p className="font-arabic text-[10px] text-neutral-muted mt-0.5">
+            <p className="font-arabic text-[11px] text-neutral-muted mt-0.5">
               {s.label}
             </p>
           </div>
         );
       })}
       {totalTarget > 0 && (
-        <div className="col-span-3 rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] p-3 shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)]">
+        <div className="col-span-3 glass-card p-3">
           <div className="flex justify-between text-xs font-arabic text-neutral-muted mb-1.5">
             <span>{t("goals.overallProgress")}</span>
             <span className="font-semibold text-primary">

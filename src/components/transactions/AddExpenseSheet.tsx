@@ -178,7 +178,7 @@ export function AddExpenseSheet() {
                           className="w-5 h-5"
                           style={{ color: cat.color }}
                         />
-                        <span className="font-arabic text-[10px] text-neutral-text dark:text-white">
+                        <span className="font-arabic text-[11px] text-neutral-text dark:text-white">
                           {t(`categories.${cat.id}`)}
                         </span>
                       </motion.button>

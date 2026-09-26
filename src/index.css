@@ -43,7 +43,7 @@ html.lenis body {
   }
 
   body {
-    font-family: "Noto Sans Arabic", sans-serif;
+    font-family: "Noto Sans Arabic", "Plus Jakarta Sans", sans-serif;
     background-color: var(--bg-page);
     color: var(--text-primary);
     -webkit-font-smoothing: antialiased;
@@ -57,5 +57,21 @@ html.lenis body {
 
   html {
     scrollbar-width: none;
+  }
+
+  /* Visible keyboard focus for every interactive element */
+  :focus-visible {
+    outline: 2px solid rgb(31 122 99 / 0.6);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Shared frosted-glass surface used by cards, tiles and list containers */
+  .glass-card {
+    @apply rounded-2xl border border-white/80 bg-white/70 backdrop-blur-xl
+      shadow-[0_1px_2px_rgba(16,24,40,0.04),0_4px_16px_rgba(16,24,40,0.05)]
+      dark:border-white/[0.08] dark:bg-white/[0.04]
+      dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)];
   }
 }

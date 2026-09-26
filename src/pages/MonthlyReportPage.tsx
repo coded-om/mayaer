@@ -135,7 +135,7 @@ export function MonthlyReportPage() {
           transition={{ delay: 0.15 }}
           className="rounded-2xl bg-gradient-to-br from-green-50/80 to-green-100/80 dark:from-green-950/50 dark:to-green-900/50 backdrop-blur-xl border border-green-200/40 dark:border-green-800/30 shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-4 text-center">
           <TbArrowUpRight className="w-6 h-6 text-success mx-auto mb-1" />
-          <p className="font-arabic text-[10px] text-neutral-muted dark:text-gray-400">
+          <p className="font-arabic text-[11px] text-neutral-muted dark:text-gray-400">
             {t("report.totalIncome")}
           </p>
           <p className="font-mono text-lg font-bold text-success flex items-center justify-center gap-1">
@@ -150,7 +150,7 @@ export function MonthlyReportPage() {
           transition={{ delay: 0.2 }}
           className="rounded-2xl bg-gradient-to-br from-red-50/80 to-red-100/80 dark:from-red-950/50 dark:to-red-900/50 backdrop-blur-xl border border-red-200/40 dark:border-red-800/30 shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-4 text-center">
           <TbArrowDownLeft className="w-6 h-6 text-danger mx-auto mb-1" />
-          <p className="font-arabic text-[10px] text-neutral-muted dark:text-gray-400">
+          <p className="font-arabic text-[11px] text-neutral-muted dark:text-gray-400">
             {t("report.totalExpense")}
           </p>
           <p className="font-mono text-lg font-bold text-danger flex items-center justify-center gap-1">
@@ -188,7 +188,7 @@ export function MonthlyReportPage() {
         <motion.div
           {...fadeUp}
           transition={{ delay: 0.3 }}
-          className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-4">
+          className="glass-card p-4">
           <div className="flex items-center gap-2 mb-3">
             <TbChartPie className="w-5 h-5 text-primary" />
             <p className="font-arabic text-sm font-semibold text-neutral-text dark:text-white">
@@ -239,30 +239,30 @@ export function MonthlyReportPage() {
         {...fadeUp}
         transition={{ delay: 0.35 }}
         className="grid grid-cols-3 gap-3">
-        <div className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-3 text-center">
+        <div className="glass-card p-3 text-center">
           <TbFlame className="w-5 h-5 text-orange-500 mx-auto mb-1" />
           <p className="font-mono text-lg font-bold text-neutral-text dark:text-white">
             {longestStreak}
           </p>
-          <p className="font-arabic text-[10px] text-neutral-muted">
+          <p className="font-arabic text-[11px] text-neutral-muted">
             {t("report.streak")}
           </p>
         </div>
-        <div className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-3 text-center">
+        <div className="glass-card p-3 text-center">
           <TbStar className="w-5 h-5 text-gold mx-auto mb-1" />
           <p className="font-mono text-lg font-bold text-neutral-text dark:text-white">
             {totalPoints}
           </p>
-          <p className="font-arabic text-[10px] text-neutral-muted">
+          <p className="font-arabic text-[11px] text-neutral-muted">
             {t("report.points")}
           </p>
         </div>
-        <div className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-3 text-center">
+        <div className="glass-card p-3 text-center">
           <TbFileText className="w-5 h-5 text-primary mx-auto mb-1" />
           <p className="font-mono text-lg font-bold text-neutral-text dark:text-white">
             {report.txCount}
           </p>
-          <p className="font-arabic text-[10px] text-neutral-muted">
+          <p className="font-arabic text-[11px] text-neutral-muted">
             {t("report.transactions")}
           </p>
         </div>
@@ -273,7 +273,7 @@ export function MonthlyReportPage() {
         <motion.div
           {...fadeUp}
           transition={{ delay: 0.4 }}
-          className="rounded-2xl border border-white/70 dark:border-white/[0.08] backdrop-blur-xl bg-white/60 dark:bg-white/[0.04] shadow-[0_2px_16px_rgba(0,0,0,0.04)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.2)] p-4 text-center">
+          className="glass-card p-4 text-center">
           <p className="font-arabic text-xs text-neutral-muted dark:text-gray-400">
             {t("report.topCategory")}
           </p>
